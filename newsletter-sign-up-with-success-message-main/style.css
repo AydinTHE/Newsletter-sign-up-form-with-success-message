@@ -1,0 +1,199 @@
+/* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* CSS Variables */
+        :root {
+            /* Primary Color */
+            --primary-red: hsl(4, 100%, 67%);
+            
+            /* Other Colors */
+            --blue-800: hsl(234, 29%, 20%);
+            --blue-700: hsl(235, 18%, 26%);
+            --grey: hsl(0, 0%, 58%);
+            --white: hsl(0, 0%, 100%);
+            
+            /* Standart Size */
+            --body-font-size: 16px;
+        }
+
+        /* Baseline */
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: var(--body-font-size);
+            background-color: var(--blue-700);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+        }
+
+        /* Card Container */
+        .signup-card {
+            background-color: var(--white);
+            border-radius: 24px;
+            display: flex;
+            max-width: 1000px;
+            width: 100%;
+            box-shadow: 0 10px 30px black;
+        }
+
+        /* Left Content Area */
+        .content-area {
+            padding: 70px 60px;
+            width: 60%;
+        }
+
+        /* Heading Area */
+        .heading {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--blue-800);
+            margin-bottom: 24px;
+        }
+
+        .subtitle {
+            color: var(--blue-800);
+            margin-bottom: 24px;
+            font-size: 18px;
+        }
+
+        /* List */
+        .benefits-list {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+        /* For Each of items */
+        .benefit-item  {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            color: var(--blue-800);
+        }
+
+        /* Check Icons Container */
+        .check-icon {
+            margin-right: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Check Icons image*/
+        .check-icon img {
+            width: 18px;
+            height: 18px;
+
+        }
+
+        /* Form Elements for email and submit buttons */
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+
+        .form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--blue-800);
+            margin-bottom: 8px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 16px;
+            border: 1px solid var(--grey);
+            border-radius: 8px;
+            font-family: 'Roboto', sans-serif;
+            font-size: var(--body-font-size);
+        }
+
+        .form-input::placeholder {
+            color: var(--grey);
+        }
+
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--blue-800);
+        }
+
+        /* Subscribe Button */
+        .subscribe-btn {
+
+            width: 100%;
+            padding: 16px;
+            background-color: var(--blue-800);
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            font-family: 'Roboto', sans-serif;
+            font-size: var(--body-font-size);
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .subscribe-btn:hover {
+            background-color: var(--primary-red);
+            box-shadow: 0 4px 10px var(--primary-red)
+        }
+
+        /* Right Image Area */
+        .image-area {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-image {
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            padding: 19px;
+
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+
+            .signup-card {
+                flex-direction: column-reverse;
+                max-width: 375px;
+            }
+            
+            .content-area {
+                width: 100%;
+                padding: 32px 24px;
+            }
+            
+            .heading {
+                font-size: 32px;
+            }
+            
+            body{
+
+                background-color: var(--white);
+            }
+            
+            .right-image{
+
+                width: 500px;
+                padding-top: 0px;
+
+            }
+
+            .signup-card{
+                box-shadow: none;
+            }
+
+
+
+        }

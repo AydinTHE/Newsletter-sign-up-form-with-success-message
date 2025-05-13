@@ -1,0 +1,108 @@
+:root {
+            /* Primary Color */
+            --primary-red: hsl(4, 100%, 67%);
+            
+            /* Other Colors */
+            --blue-800: hsl(234, 29%, 20%);
+            --blue-700: hsl(235, 18%, 26%);
+            --grey: hsl(0, 0%, 58%);
+            --white: hsl(0, 0%, 100%);
+}
+
+body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--blue-700);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        /* Main */
+        .container {
+            background-color: var(--white);
+            border-radius: 22px;
+            box-shadow: 0 10px 30px black;
+            max-width: 400px;
+            padding: 40px 30px;
+            width: 100%;
+            text-align: start;
+            position: relative;
+        }
+        /* Icon */
+        .check-icon { 
+            display: flex;
+            justify-content: flex-start;
+            margin: 0 auto 20px;
+        }
+        
+        .checkmark-icon img {
+            width: 50px;
+            height: 50px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            color: var(--blue-800);
+            margin: 0 0 20px;
+        }
+        
+        p {
+            color: var(--grey);
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        .email {
+            font-weight: bold;
+            color: var(--blue-800);
+        }
+        /* Button */
+        .dismiss-button {
+            background-color: var(--blue-800);
+            color: var(--white);
+            border: none;
+            border-radius: 9px;
+            padding: 15px 20px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 12px;
+            margin-bottom: 13px;
+            transition: background-color 0.2s;
+        }
+        
+        .dismiss-button:hover {
+            background-color: var(--primary-red);
+            box-shadow: 0 4px 10px var(--primary-red);
+        }
+
+         @media (max-width: 500px) {
+            .container {
+                flex-direction: column-reverse;
+                max-width: 375px;
+                border-radius: 0px;
+            }
+            
+            h1 {
+                font-size: 38px;
+            }
+
+            .dismiss-button{
+                margin-top: 200px;
+            }
+
+            p{
+                font-size: 20px;
+            }
+            
+            .check-icon img{
+
+                margin-top: 50px;
+                margin-bottom: 0px;
+            }
+
+
+        }

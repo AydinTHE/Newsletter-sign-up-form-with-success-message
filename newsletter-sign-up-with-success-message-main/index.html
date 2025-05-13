@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup</title>
+    <!-- Google Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="signup-card">
+        
+        <!-- Left content area -->
+
+        <div class="content-area">
+            <h1 class="heading">Stay updated!</h1>
+            <p class="subtitle">Join 60,000+ product managers receiving monthly updates on:</p>
+            
+            <ul class="benefits-list">
+                <li class="benefit-item">
+                    <!-- Check Icon Images and list Start Here -->
+                    <span class="check-icon">
+                        <img src="./assets/images/icon-list.svg" alt="">
+                    </span>
+                    Product discovery and building what matters
+                </li>
+                <li class="benefit-item">
+                    
+                    <span class="check-icon">
+                        <img src="./assets/images/icon-list.svg" alt="">
+                    </span>
+                    Measuring to ensure updates are a success
+                </li>
+                <li class="benefit-item">
+            
+                    <span class="check-icon">
+                        <img src="./assets/images/icon-list.svg" alt="">
+                    </span>
+                    And much more!
+                </li>
+            </ul>
+            <!-- Check Icon Images and list ends here -->
+
+
+            <!-- Email Area and Submit Button  -->
+            <form action="page2.html" method="get">
+                <div class="form-group">
+                    <label for="email" class="form-label">Email address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        class="form-input" 
+                        placeholder="email@company.com" 
+                        required>
+                </div>
+                <button type="submit" class="subscribe-btn">Subscribe to monthly newsletter</button>
+            </form>
+        </div>
+        
+        <!-- Right image area -->
+
+        <div class="image-area">
+
+            <!-- Image -->
+
+            <div class="right-image">
+
+                <picture>
+                 <!-- Image For Mobile or small screens -->
+
+                  <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 768px)">
+
+                  <!-- Alternative Image For Desktop-->
+
+                  <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+
+                </picture>
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
